@@ -3,7 +3,8 @@ import { Routes } from '@angular/router';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
 import { TableListComponent } from '../../table-list/table-list.component';
-
+import { SearchComponent } from '../../search/search.component';
+import { ResultComponent } from '../../result/result.component';
 export const AdminLayoutRoutes: Routes = [
     // {
     //   path: '',
@@ -47,7 +48,9 @@ export const AdminLayoutRoutes: Routes = [
     //         component: UpgradeComponent
     //     }]
     // }
-    { path: 'dashboard',      component: DashboardComponent },
-    { path: 'user-profile',   component: UserProfileComponent },
-    { path: 'table-list',     component: TableListComponent },
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'user-profile', component: UserProfileComponent },
+    { path: 'table-list', component: TableListComponent },
+    { path: 'search', component: SearchComponent },
+    { path: 'result', component: ResultComponent },
 ];
